@@ -7,11 +7,11 @@ phonetic_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 print(phonetic_dict)
 
 def generate_phoenetic():
-    word = input("Enter a word: ").upper()
+    word = input("Enter a word: ").upper()     #enter the word
     try:
         output_list = [phonetic_dict[letter] for letter in word]
     except KeyError:
-        print("Sorry, only letters in the word please.")
+        print("Sorry, only letters in the word please.")    #expected error
     else:
         print(output_list)
 
