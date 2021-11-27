@@ -1,6 +1,7 @@
 from typing import KeysView
 import pandas
 
+#read data
 data = pandas.read_csv("D:\VS_Code Programs\Python\Alphabet split full-form Project\list_phonetic_alphabet.csv")
 
 phonetic_dict = {row.letter: row.code for (index, row) in data.iterrows()}
