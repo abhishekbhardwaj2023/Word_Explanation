@@ -8,6 +8,7 @@ data = pandas.read_csv("D:\VS_Code Programs\Python\Alphabet split full-form Proj
 phonetic_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 print(phonetic_dict)
 
+#logic function
 def generate_phoenetic():
     word = input("Enter a word: ").upper()     #enter the word
     try:
